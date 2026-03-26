@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Trava a rolagem horizontal no nível mais alto */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #b11116;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    width: calc(100% - 40px); /* Garante que a margem lateral não empurre o layout */
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #b11116;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #b11116;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap; /* OBRIGATÓRIO: impede que os cards estiquem a tela para o lado */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1 1 300px; /* Permite que o card cresça, mas quebre a linha se tiver menos de 300px */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do card */
+}
+
+.card h2 {
+    color: #b11116;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #b11116;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    flex-shrink: 0;
+    width: 100%;
+}
