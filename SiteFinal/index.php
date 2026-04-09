@@ -5,76 +5,91 @@
     <meta charset="UTF-8">
     <title>ETEC Zona Leste</title>
     <link rel="stylesheet" href="style.css">
-    
-      <style>
-.gov-sp-bar {
-    background-color: #fdfdfd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-}
 
-.gov-sp-bar img { 
-    height: 45px;
-    width: auto;
-    display: block;
-}
+    <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
 
-.main-header {
-    background-color: #fff;
-    padding: 25px 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-bottom: 2px solid #b11116;
-}
+        * {
+            box-sizing: border-box;
+        }
 
-.logos { 
-    display: flex; 
-    align-items: center; 
-    gap: 50px; 
-}
 
-.logo-etec { 
-    height: 80px; 
-}
 
-.navbar {
-    background-color: #b11116;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
-}
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-weight: bold;
-}
+        .gov-sp-bar {
+            background-color: #fdfdfd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+        }
 
-@media (max-width: 768px) {
-    .gov-sp-bar { 
-        justify-content: center; 
-        padding: 10px; 
-    }
-    .gov-sp-bar img { 
-        height: 35px; 
-    }
-    .logos { 
-        justify-content: center; 
-        width: 100%; 
-    }
-    .logo-etec { 
-        height: 60px; 
-    }
-}
+        .gov-sp-bar img {
+            height: 45px;
+            width: auto;
+            display: block;
+        }
 
+        .main-header {
+            background-color: #fff;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 2px solid #b11116;
+        }
+
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .logo-etec {
+            height: 80px;
+        }
+
+        .navbar {
+            background-color: #b11116;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            flex-shrink: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .gov-sp-bar {
+                justify-content: center;
+                padding: 10px;
+            }
+
+            .gov-sp-bar img {
+                height: 35px;
+            }
+
+            .logos {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .logo-etec {
+                height: 60px;
+            }
+        }
     </style>
 
 </head>
